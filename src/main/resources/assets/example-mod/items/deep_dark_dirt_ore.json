@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "example-mod:block/deep_dark_dirt_ore"
+  }
+}
