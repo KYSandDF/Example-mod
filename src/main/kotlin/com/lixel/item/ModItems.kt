@@ -17,10 +17,17 @@ object ModItems {
         return register(name, ::Item, Item.Properties())
     }
 
-    fun <T : Item> register(name: String, itemFactory: (Item.Properties) -> T, settings: Item.Properties): T {
+    inline fun <T : Item> register(
+        name: String,
+        itemFactory: (Item.Properties) -> T,
+        settings: Item.Properties
+    ): T {
         // Create the item key.
         val itemKey: ResourceKey<Item> =
-            ResourceKey.create<Item>(Registries.ITEM, Identifier.fromNamespaceAndPath(ExampleMod.MOD_ID, name))
+            ResourceKey.create(
+                Registries.ITEM,
+                Identifier.fromNamespaceAndPath(ExampleMod.MOD_ID, name)
+            )
 
         // Create the item instance.
         val item: T = itemFactory(settings.setId(itemKey))

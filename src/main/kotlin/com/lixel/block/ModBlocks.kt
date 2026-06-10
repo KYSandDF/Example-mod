@@ -33,7 +33,7 @@ object ModBlocks {
     )
 
 
-    fun register(
+    inline fun register(
         name: String,
         factory: (BlockBehaviour.Properties) -> Block,
         properties: BlockBehaviour.Properties,
@@ -56,15 +56,15 @@ object ModBlocks {
 
     fun registerBlockItem(name: String, block: Block) {
 
-        val id = ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(ExampleMod.MOD_ID, name))
+        val id = ResourceKey.create(
+            Registries.ITEM,
+            Identifier.fromNamespaceAndPath(ExampleMod.MOD_ID, name)
+        )
 
         val blockItem = BlockItem(block, Item.Properties().setId(id).useBlockDescriptionPrefix())
 
         Registry.register(BuiltInRegistries.ITEM, id, blockItem)
     }
 
-    fun initialize(){
-        ExampleMod.LOGGER.info("Mod Blocks")
-        ExampleMod.LOGGER.info("i'm loaded")
-    }
+    fun initialize() = ExampleMod.LOGGER.info("ModBlocks initialized")
 }
