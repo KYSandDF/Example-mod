@@ -33,7 +33,7 @@ object ModBlocks {
     )
 
 
-    inline fun register(
+    fun register(
         name: String,
         factory: (BlockBehaviour.Properties) -> Block,
         properties: BlockBehaviour.Properties,
