@@ -1,6 +1,7 @@
 {
   "itemGroup.example": "示例模组物品列表",
   "item.example-mod.suspicious_substance": "迷之物质",
+  "item.example-mod.author": "AncDS",
   "block.example-mod.deep_dark_dirt_block": "深邃土块",
   "block.example-mod.deep_dark_dirt_ore": "深邃土矿"
 }

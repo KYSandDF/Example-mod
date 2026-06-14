@@ -11,6 +11,7 @@ import net.minecraft.world.item.Item
 object ModItems {
 
     val SUSPICIOUS_SUBSTANCE = register("suspicious_substance")
+    val AUTHOR = register("author")
 
 
     fun register(name: String): Item {

@@ -1,5 +1,6 @@
 {
   "item.example-mod.suspicious_substance": "Suspicious Substance",
+  "item.example-mod.author": "AncDS",
   "block.example-mod.deep_dark_dirt_ore": "Deep Dark Dirt Ore",
   "block.example-mod.deep_dark_dirt_block": "Deep Dark Dirt Block",
   "itemGroup.example": "Example Mod Tabs"

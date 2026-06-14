@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.7,
+  "group": "suspicious_substance",
+  "ingredient": "example-mod:deep_dark_dirt_ore",
+  "result": {
+    "id": "example-mod:suspicious_substance"
+  }
+}

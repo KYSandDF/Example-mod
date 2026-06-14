@@ -19,7 +19,8 @@ object ModCreativeModeTabs {
         //将命名空间设为example-mod:example
         Identifier.fromNamespaceAndPath(ExampleMod.MOD_ID, "example")
     )
-                   //初始化创造模式物品栏
+
+    //初始化创造模式物品栏
     val TUTORIAL = FabricCreativeModeTab.builder()
         //图标设置为suspicious_substance
         .icon { ItemStack(ModItems.SUSPICIOUS_SUBSTANCE) }
@@ -27,8 +28,9 @@ object ModCreativeModeTabs {
         .title(Component.translatable("itemGroup.example"))
         //设定所添加的物品
         .displayItems { parameters, output ->
+            output.accept{ ModItems.AUTHOR }
             output.accept(ModItems.SUSPICIOUS_SUBSTANCE)
-            output.accept(Items.DIAMOND)
+            output.accept( Items.DIAMOND )
             output.accept(ModBlocks.DEEP_DARK_DIRT_BLOCK)
             output.accept(ModBlocks.DEEP_DARK_DIRT_ORE)
         }.build()

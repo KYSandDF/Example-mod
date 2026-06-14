@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": "example-mod:deep_dark_dirt_block",
+    "S": "example-mod:suspicious_substance",
+    "D": "minecraft:diamond"
+  },
+  "pattern": [
+    "BSB",
+    "SDS",
+    "BSB"
+  ],
+  "result": {
+    "count": 8,
+    "id": "example-mod:author"
+  }
+}
