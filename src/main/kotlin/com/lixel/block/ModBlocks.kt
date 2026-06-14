@@ -18,14 +18,14 @@ object ModBlocks {
     val DEEP_DARK_DIRT_BLOCK = register(
         "deep_dark_dirt_block",
         BlockBehaviour.Properties.of()
-            .strength(2.0f, 1000.0f)
+            .strength(3.0f, 1000.0f)
             .mapColor(MapColor.DIRT),
         true
     )
     val DEEP_DARK_DIRT_ORE = register(
         "deep_dark_dirt_ore",
         BlockBehaviour.Properties.of()
-            .strength(4.0f, 5.0f)
+            .strength(3.0f, 5.0f)
             .mapColor(MapColor.STONE)
             .instrument(NoteBlockInstrument.BASEDRUM)
             .requiresCorrectToolForDrops(),
@@ -33,7 +33,7 @@ object ModBlocks {
     )
 
 
-    inline fun register(
+    fun register(
         name: String,
         factory: (BlockBehaviour.Properties) -> Block,
         properties: BlockBehaviour.Properties,

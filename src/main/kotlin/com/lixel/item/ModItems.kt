@@ -17,7 +17,7 @@ object ModItems {
         return register(name, ::Item, Item.Properties())
     }
 
-    inline fun <T : Item> register(
+    fun <T : Item> register(
         name: String,
         itemFactory: (Item.Properties) -> T,
         settings: Item.Properties
